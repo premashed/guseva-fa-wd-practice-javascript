@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос участников курсов по повышению квалификации</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+<body>
+    <form>
+        <h1>Опрос участников курсов по повышению квалификации</h1>
+        <p>Пожалуйста, заполните анкету, чтобы помочь нам улучшить будущие мероприятия.</p>
+
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone" placeholder="89876543210" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+
+        <label for="topic">Выберите тему курса:</label>
+        <select id="topic" name="topic">
+            <option value="accounting">Бухгалтерский учет</option>
+            <option value="taxation">Налоги</option>
+            <option value="law">Юриспруденция</option>
+            <option value="audit">Аудит</option>
+        </select>
+
+        <label>Оцените Вашу удовлетворенность мероприятием:</label>
+        <div class='container_1'>
+            <labeldark><input type="radio" name="satisfaction" value="dissatisfied" required> Недоволен</labeldark>
+            <labeldark><input type="radio" name="satisfaction" value="neutral" required> Нейтрально</labeldark>
+            <labeldark><input type="radio" name="satisfaction" value="satisfied" required> Доволен</labeldark>
+            <labeldark><input type="radio" name="satisfaction" value="very_satisfied" required> Очень доволен</labeldark>
+        </div>
+        
+        <label>Что Вам было наиболее интересно?</label>
+        <div class='container_1'>
+        <labeldark><input type="checkbox" name="sections" value="presentations"> Презентации</labeldark>
+        <labeldark><input type="checkbox" name="sections" value="lectures"> Лекции</labeldark>
+        <labeldark><input type="checkbox" name="sections" value="workshops"> Мастер-классы</labeldark>
+        </div>
+
+        <label>Будете ли рекомендовать курсы коллегам?</label>
+        <div class='container_1'>
+            <labeldark><input type="radio" name="recommendation" value="yes" required> Да</labeldark>
+            <labeldark><input type="radio" name="recommendation" value="no" required> Нет</labeldark>
+            <labeldark><input type="radio" name="recommendation" value="unsure" required> Не уверен</labeldark>
+        </div>
+        <label for="comments">Комментарии или предложения:</label>
+        <textarea id="comments" name="comments" rows="5"></textarea>
+
+        <button type="submit" >Отправить</button>
+    </form>
+</body>
+</html>
