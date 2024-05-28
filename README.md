@@ -1,1 +1,1 @@
-https://premashed.github.io/guseva-fa-wd-practice-javascript/docs/indexы.html
+https://premashed.github.io/guseva-fa-wd-practice-javascript/docs/index.html
